@@ -1,0 +1,7 @@
+<h1>Sorteio</h1>
+<% @draw_array.each do |draw| %>
+  <p>
+    Número <%= draw.keys.first %>
+    Retirou número <%= draw.values.first %>
+  </p>
+<% end %>
