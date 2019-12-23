@@ -1,6 +1,7 @@
 <div class="pochete-box">
-
-  <h1>Sorteio</h1>
+  <h1>Pochester Occult Friend</h1>
+  <%= image_tag('victoria.jpg', class: 'pochete-photo') %>
+  <h2>Sorteio</h2>
   <% @draw_array.each do |draw| %>
     <p>
       Número <%= draw.keys.first %>
