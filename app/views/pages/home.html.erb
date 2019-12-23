@@ -1,9 +1,11 @@
-<%= image_tag('pochete.jpg') %>
-<h1>Pochester Occult Friend</h1>
-<p>Seja bem vindo, clique no link para sortear!</p>
-<form action="/draw">
-  <label for="amout">Quantas pessoas?</label>
-  <input type="integer", name='amount'>
-  <label for="submit">Sortear</label>
-  <input type="submit">
-</form>
+<div class="pochete-box">
+  <h1>Pochester Occult Friend</h1>
+  <%= image_tag('pochete.jpg', class: 'pochete-photo') %>
+  <h2>Seja bem vindo, selecione o número de pessoas para sortear!</h2>
+  <form action="/draw">
+    <label for="amout">Quantas pessoas?</label>
+    <input type="integer", name='amount'>
+    <label for="submit">Sortear</label>
+    <input type="submit">
+  </form>
+</div>
